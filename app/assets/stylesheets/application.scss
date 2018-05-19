@@ -15,3 +15,21 @@
  */
  
  #mapid { height: 180px; }
+
+.container-welcome {
+    //margin-bottom: 0px;
+    height: 500px;
+    background-image: image-url("Houston_Skyline.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    //font-size: 40px;
+    
+}
+
+.title {
+    font-size: 40px;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    text-align: center;
+    top-margin: 35px;
+}
