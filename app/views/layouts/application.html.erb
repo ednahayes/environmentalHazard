@@ -14,22 +14,21 @@
    crossorigin=""></script>
 </head>
 <body>
-  <div class="container">
-    <div id="mapid"></div>
-    
+  <div class="container welcome">
+    WELCOME TO ENVIRONMENTAL HAZARD
   </div>
-       <% if flash[:notice] %>
-         <div class="alert alert-success">
-           <button type="button" class="close" data-dismiss="alert">&times;</button>
-           <%= flash[:notice] %>
-         </div>
-       <% elsif flash[:alert] %>
-         <div class="alert alert-warning">
-           <button type="button" class="close" data-dismiss="alert">&times;</button>
-           <%= flash[:alert] %>
-         </div>
-       <% end %>
-<%= yield %>
+    <% if flash[:notice] %>
+       <div class="alert alert-success">
+         <button type="button" class="close" data-dismiss="alert">&times;</button>
+         <%= flash[:notice] %>
+       </div>
+     <% elsif flash[:alert] %>
+       <div class="alert alert-warning">
+         <button type="button" class="close" data-dismiss="alert">&times;</button>
+         <%= flash[:alert] %>
+       </div>
+     <% end %>
+    <%= yield %>
 
 </body>
 </html>
